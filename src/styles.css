@@ -1,0 +1,42 @@
+.App {
+  max-width: 600px;
+  font-family: sans-serif;
+  text-align: center;
+  margin: auto;
+  padding: 2rem;
+}
+
+.button {
+  font-weight: bold;
+  padding: 0.8rem;
+  margin: 0.5rem 0.5rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  background-color: #48c9b0;
+  border-color: #48c9b0;
+  font-size: 1rem;
+}
+
+.li {
+  list-style: none;
+  padding: 1rem;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  width: 85%;
+  margin: 1rem 0rem;
+  background-color: #a3e4d7;
+  border-color: #a3e4d7;
+  text-align: left;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.state {
+  font-size: small;
+}
+
+h1 {
+  background-color: #1abc9c;
+}
