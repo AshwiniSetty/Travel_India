@@ -17,12 +17,17 @@
   font-size: 1rem;
 }
 
+.container {
+  margin-left: 0px;
+  padding: 0rem;
+}
+
 .li {
   list-style: none;
   padding: 1rem;
   border: 1px solid;
   border-radius: 0.5rem;
-  width: 85%;
+  width: 95%;
   margin: 1rem 0rem;
   background-color: #a3e4d7;
   border-color: #a3e4d7;
@@ -36,7 +41,9 @@
 .state {
   font-size: small;
 }
-
+.rating {
+  font-size: small;
+}
 h1 {
   background-color: #1abc9c;
 }

@@ -3,32 +3,25 @@ import { useState } from "react";
 
 const placeTypes = {
   "Hill Station": [
-    { name: "Manali", state: "Himachal Pradesh" },
-    { name: "Gulmarg", state: "Jammu and Kashmir" },
-    { name: "Nainital", state: "Uttarkhand" },
-    { name: "Mussoorie", state: "Uttarkhand" },
-    { name: "Palampuri", state: "Himachal Pradesh" }
+    { name: "Manali", state: "Himachal Pradesh", rating: "⭐⭐⭐⭐" },
+    { name: "Gulmarg", state: "Jammu and Kashmir", rating: "⭐⭐⭐⭐" },
+    { name: "Nainital", state: "Uttarkhand", rating: "⭐⭐⭐⭐⭐" },
+    { name: "Mussoorie", state: "Uttarkhand", rating: "⭐⭐⭐⭐" },
+    { name: "Palampuri", state: "Himachal Pradesh", rating: "⭐⭐⭐⭐⭐" }
   ],
   Beach: [
-    { name: "Varkala", state: "Kerala" },
-    { name: "Gokarna", state: "Karnataka" },
-    { name: "Baga", state: "Goa" },
-    { name: "Tarkali", state: "Maharashtra" },
-    { name: "Pondicherry", state: "Tamil Nadu" }
+    { name: "Varkala", state: "Kerala", rating: "⭐⭐⭐⭐⭐" },
+    { name: "Gokarna", state: "Karnataka", rating: "⭐⭐⭐⭐" },
+    { name: "Baga", state: "Goa", rating: "⭐⭐⭐⭐⭐" },
+    { name: "Tarkali", state: "Maharashtra", rating: "⭐⭐⭐⭐" },
+    { name: "Pondicherry", state: "Tamil Nadu", rating: "⭐⭐⭐⭐⭐" }
   ],
   "Water Falls": [
-    { name: "Shivanasamudra", state: "Karnataka" },
-    { name: "Dudhsagar", state: "Goa" },
-    { name: "Athirapally", state: "Kerala" },
-    { name: "Hogenakkal", state: "Tamil Nadu" },
-    { name: "Nohsngithiang", state: "Meghalaya" }
-  ],
-  Monuments: [
-    { name: "Taj Mahal", state: "Uttar Pradesh" },
-    { name: "Qutub Minar", state: "Delhi" },
-    { name: "Golden Temple", state: "Amritsar" },
-    { name: "Mysore Palace", state: "Karnataka" },
-    { name: "Amer Fort", state: "Rajasthan" }
+    { name: "Shivanasamudra", state: "Karnataka", rating: "⭐⭐⭐⭐" },
+    { name: "Dudhsagar", state: "Goa", rating: "⭐⭐⭐⭐⭐" },
+    { name: "Athirapally", state: "Kerala", rating: "⭐⭐⭐⭐" },
+    { name: "Hogenakkal", state: "Tamil Nadu", rating: "⭐⭐⭐⭐⭐" },
+    { name: "Nohsngithiang", state: "Meghalaya", rating: "⭐⭐⭐⭐⭐" }
   ]
 };
 export default function App() {
@@ -50,12 +43,13 @@ export default function App() {
       </div>
       <hr />
       <div>
-        <ul>
+        <ul className="container">
           {placeTypes[selectedGenre].map((place) => (
             <li className="li" key={place.name}>
               {" "}
               <div className="name"> {place.name} </div>
-              <div className="state"> {place.state} </div>
+              <div className="state">State:{place.state} </div>
+              <div className="rating"> Rating:{place.rating} </div>
             </li>
           ))}
         </ul>
